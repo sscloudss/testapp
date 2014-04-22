@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>家教APP</title>
+    <title>家教云平台</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
     <script src="js/jquery.js"></script>
@@ -19,9 +19,12 @@
 </head>
 <body>
 
-<div data-role="page" id="home" data-title="找家教">
+<!--找家教页面-->
+<div data-role="page" id="home" data-title="家教云平台">
     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-        <h1>家教APP</h1>
+        <a href="details.html" data-role="button" data-icon="search">查找</a>
+        <h1>家教云平台</h1>
+        <a href="#" data-role="button" class="ui-btn-right" data-icon="search">X</a>
     </div><!-- /header -->
 <ul data-role="listview" data-inset="true">
     <li><a href="#">
@@ -59,45 +62,7 @@
         <h2>Broken Bells</h2>
         <p>Broken Bells</p></a>
     </li>
-    <li><a href="#">
-        <img src="img/1.jpg">
-        <h2>Warning</h2>
-        <p>Hot Chip</p></a>
-    </li>
-    <li><a href="#">
-        <img src="img/1.jpg">
-        <h2>Wolfgang Amadeus Phoenix</h2>
-        <p>Phoenix</p></a>
-    </li>
-    <li><a href="#">
-        <img src="img/1.jpg">
-        <h2>Broken Bells</h2>
-        <p>Broken Bells</p></a>
-    </li>
-    <li><a href="#">
-        <img src="img/1.jpg">
-        <h2>Warning</h2>
-        <p>Hot Chip</p></a>
-    </li>
-    <li><a href="#">
-        <img src="img/1.jpg">
-        <h2>Wolfgang Amadeus Phoenix</h2>
-        <p>Phoenix</p></a>
-    </li><li><a href="#">
-    <img src="img/1.jpg">
-    <h2>Broken Bells</h2>
-    <p>Broken Bells</p></a>
-</li>
-    <li><a href="#">
-        <img src="img/1.jpg">
-        <h2>Warning</h2>
-        <p>Hot Chip</p></a>
-    </li>
-    <li><a href="#">
-        <img src="img/1.jpg">
-        <h2>Wolfgang Amadeus Phoenix</h2>
-        <p>Phoenix</p></a>
-    </li>
+
 </ul>
     <div data-role="footer" data-position="fixed" data-id="main-tabbar" data-theme="b">
         <div data-role="navbar">
@@ -109,9 +74,10 @@
     </div><!-- /footer -->
 </div>
 
+<!--个人信息页面-->
 <div data-role="page" id="profile" data-title="找家教">
     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-        <h1>家教APP</h1>
+        <h1>家教云平台</h1>
     </div><!-- /header -->
 
     <div data-role="content">
@@ -140,7 +106,7 @@
     <div data-role="footer" data-position="fixed" data-id="main-tabbar" data-theme="b">
         <div data-role="navbar">
             <ul>
-                <li><a href="#home" class=" ui-state-persist" data-icon="home" data-theme="b">找家教</a></li>
+                <li><a href="#home" class="ui-state-persist" data-icon="home" data-theme="b">找家教</a></li>
                 <li><a href="#profile" data-icon="star" data-theme="b">我的信息</a></li>
             </ul>
         </div><!-- /navbar -->
