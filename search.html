@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>查找</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b"  data-add-back-btn="true" data-back-btn-text="返回">
+<!--        <a href="" data-role="button" data-icon="back">返回</a>  -->
+        <h1>家教云平台</h1>
+        <a href="index.html" data-role="button" class="ui-btn-right" data-icon="home">首页</a>
+    </div><!-- /header -->
+    <div data-role="content">
+        <form method="post" action="none">
+            <fieldset  >
+                <label for="fname">姓名：</label>
+                <input type="text" name="fname" id="fname">
+                <label for="fsex" data-inline="true">性别：</label>
+                <fieldset data-role="controlgroup" id="fsex" data-inline="true" data-type="horizontal">
+
+                    <input type="radio" name="fsex" id="fsexNone" value="0" checked="checked" >
+                    <label for="fsexNone">无所谓</label>
+                    <input type="radio" name="fsex" id="fsexMale" value="1">
+                    <label for="fsexMale">男</label>
+                    <input type="radio" name="fsex" id="fsexFemale" value="2">
+                    <label for="fsexFemale">女</label>
+                </fieldset>
+
+                <label for="grade">年级</label>
+                <select name="grade" id="grade">
+                    <option value="grade1">一年级</option>
+                    <option value="grade2">二年级</option>
+                    <option value="grade3">三年级</option>
+                    <option value="grade4">四年级</option>
+                    <option value="grade5">五年级</option>
+                    <option value="grade6">六年级</option>
+                    <option value="junior1">初一</option>
+                    <option value="junior2">初二</option>
+                    <option value="senior3">初三</option>
+                    <option value="senior1">高一</option>
+                    <option value="senior2">高二</option>
+                    <option value="senior3">高三</option>
+                </select>
+
+                <label for="subject">科目</label>
+                <select name="subject" id="subject">
+                    <option value="grade1">语文</option>
+                    <option value="grade2">数学</option>
+                    <option value="grade3">英语</option>
+                    <option value="grade4">物理</option>
+                    <option value="grade5">化学</option>
+                    <option value="grade6">生物</option>
+                    <option value="junior1">政治</option>
+                    <option value="junior2">历史</option>
+                    <option value="junior3">地理</option>
+                    <option value="others">其他</option>
+                </select>
+            </fieldset>
+            <div data-role="footer" data-position="fixed"  data-theme="b">
+            <input type="submit"  data-role="button" data-inline="false" value="查找">
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

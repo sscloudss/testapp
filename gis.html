@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>家教云平台</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        button, input, select, textarea {
+            font: 12px/16px Verdana, Helvetica, Arial, sans-serif;
+        }
+        #info {
+            margin-top: 10px;
+        }
+    </style>
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+    <script>
+        var init = function() {
+            var center = new qq.maps.LatLng(39.916527,116.397128);
+            var map = new qq.maps.Map(document.getElementById('container'),{
+                center: center,
+                zoom: 13
+            });
+            var infoWin = new qq.maps.InfoWindow({
+                map: map
+            });
+            infoWin.open();
+            infoWin.setContent('<div style="width:200px;padding-top:10px;">'+
+                    '<img style="float:left;width:30px;height:30px" src="img/1.png"/> '+
+                    '我在这里打酱油</div>');
+            infoWin.setPosition(center);
+        }
+    </script>
+</head>
+<body onload="init()">
+<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b"  data-add-back-btn="true" data-back-btn-text="返回">
+    <!--        <a href="" data-role="button" data-icon="back">返回</a>  -->
+    <h1>家教云平台</h1>
+    <a href="index.html" data-role="button" class="ui-btn-right" data-icon="home">列表显示</a>
+</div><!-- /header -->
+<div style="width:323px;height:400px;margin:10px;padding:10px;" id="container"></div>
+<div id="info">
+</div>
+</body>
+</html>

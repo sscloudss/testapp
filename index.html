@@ -9,7 +9,7 @@
     <script>
         $(function(){
             $("#home").bind("swipeleft",function(){
-                $.mobile.changePage("#profile");
+                $.mobile.changePage("#profile", {transition:"slide",reverse:false}, true, true);
             });
             $("#profile").bind("swiperight",function(){
                 $.mobile.changePage("#home", {transition:"slide",reverse:true}, true, true);
@@ -20,11 +20,11 @@
 <body>
 
 <!--找家教页面-->
-<div data-role="page" id="home" data-title="家教云平台">
+<div data-role="page" id="home" data-title="家教云平台" data-add-back-btn="true" >
     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-        <a href="details.html" data-role="button" data-icon="search">查找</a>
+        <a href="search.html" data-role="button" data-icon="search">查找</a>
         <h1>家教云平台</h1>
-        <a href="#" data-role="button" class="ui-btn-right" data-icon="search">X</a>
+        <a href="gis.html" data-role="button" class="ui-btn-right" data-icon="search">位置显示</a>
     </div><!-- /header -->
 <ul data-role="listview" data-inset="true">
     <li><a href="#">
@@ -67,7 +67,7 @@
     <div data-role="footer" data-position="fixed" data-id="main-tabbar" data-theme="b">
         <div data-role="navbar">
             <ul>
-                <li><a href="#home"  data-icon="home" data-theme="b">找家教</a></li>
+                <li><a href="#home"  data-icon="home" data-theme="b">家教云平台</a></li>
                 <li><a href="#profile" data-icon="star" data-theme="b">我的信息</a></li>
             </ul>
         </div><!-- /navbar -->
@@ -86,21 +86,9 @@
                 <h2>Broken Bells</h2>
                 <p>Broken Bells</p></a>
             </li>
-            <li><a href="#">
-                <img src="img/1.jpg">
-                <h2>Warning</h2>
-                <p>Hot Chip</p></a>
-            </li>
-            <li><a href="#">
-                <img src="img/1.jpg">
-                <h2>Wolfgang Amadeus Phoenix</h2>
-                <p>Phoenix</p></a>
-            </li>
+
         </ul>
-        <form>
-            <label for="file-2">File: data-clear-btn="true"</label>
-            <input type="file" data-clear-btn="true" name="file-2" id="file-2" value="xx">
-        </form>
+
     </div>
 
     <div data-role="footer" data-position="fixed" data-id="main-tabbar" data-theme="b">
