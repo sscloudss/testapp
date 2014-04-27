@@ -17,6 +17,7 @@
                 });
             });
         </script>
+
     </head>
 <body>
 
@@ -71,7 +72,7 @@
         </div>
     </header><!-- /header -->
     <div data-role="content">
-    <ul data-role="listview" data-inset="true">
+    <ul id=load data-role="listview" data-inset="true">
             <li><a href="info.html">
                 <img src="img/1.jpg">
                 <h2>张三</h2>
@@ -160,6 +161,12 @@
                 <img src="img/1.jpg">
                 <h2>张三</h2>
                 <p>初中数学，高一英语</p>
+            </a>
+            </li>
+            <li id="load_more"><a href="" onclick="load_more()">
+
+                <h2>查看更多</h2>
+
             </a>
             </li>
 
@@ -180,20 +187,49 @@
 <div data-role="page" id="profile" data-title="家教云平台">
     <header data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
         <h1>家教云平台</h1>
+        <a href="#" data-role="button" class="ui-btn-right" data-icon="search" data-ajax="false">推荐家教</a>
+
     </header><!-- /header -->
 
-    <div data-role="content">
-        <ul data-role="listview" data-inset="true">
-            <li><a href="#">
-                <h2>Broken Bells</h2>
-                <p>Broken Bells</p></a>
-            </li>
+    <div data-role="content" id="content">
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <img src="img/1.jpg">
+                <div class="rank">
+                    <ul type="none" >
+                        <li class="score"><img src="img/starFull.jpg"/></li>
+                        <li class="score"><img src="img/starFull.jpg"/></li>
+                        <li class="score"><img src="img/starFull.jpg"/></li>
+                        <li class="score"><img src="img/starFull.jpg"/></li>
+                        <li class="score"><img src="img/star.jpg"/></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <div class="ui-bar ui-bar-a h60">
+                    <span for="name">姓名：</span>
+                    <span id="name">李四</span>
+                </div>
+                <div class="ui-bar ui-bar-b h60">
+                    <span for="sex">性别：</span>
+                    <span id="sex">男</span>
+                </div>
 
-        </ul>
-
+            </div>
+        </div>
     </div>
+    <!--<div class="ui-grid-b">-->
+    <div class="ui-bar ui-bar-a h60">
+        <span for="subject">科目：</span>
+        <span class="subject">初二英语</span>
+    </div>
+    <div class="ui-bar ui-bar-b">
+        <span for="selfIntroduction">自我介绍：</span>
+        <p id="selfIntroduction">基础一般，需要进行大量的基础练习。</p>
+    </div>
+    <!--</div>-->
 
-    <footer data-role="footer" data-position="fixed" data-id="main-tabbar" data-theme="b">
+<footer data-role="footer" data-position="fixed" data-id="main-tabbar" data-theme="b">
         <div data-role="navbar">
             <ul>
                 <li><a href="#home" data-icon="home" data-theme="b">找家教</a></li>
@@ -202,6 +238,26 @@
         </div><!-- /navbar -->
     </footer><!-- /footer -->
 </div>
+<script>
+    function load_more(){
+        var myul=$("#load");
+        var more = $("#load_more");
+        for(var i=0;i<10;i++) {
+            var myli = $("<li></li>");
 
+            var mya = $("<a href='info.html'></a>");
+//                    var myimg=$("<img></img>");
+
+            var myh2 = $("<h2>新张三</h2>");
+            var myp = $("<p>初中数学</p>");
+//                    mya.append(myimg);
+            mya.append(myh2);
+            mya.append(myp);
+            myli.append(mya);
+//                    myul.append(myli);
+            more.before(myli);
+        }
+    }
+</script>
 </body>
 </html>

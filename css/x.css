@@ -1,0 +1,21 @@
+#star li{float: left}
+
+body{
+    margin: 0 auto;
+}
+
+.top{
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
+.imgs{
+    background-color: red;
+    border: 1px solid green;
+}
+.rank{
+    margin-left: -18px;
+}
+.score{
+    float: left;
+}
