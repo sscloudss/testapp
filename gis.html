@@ -4,21 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>家教云平台</title>
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="css/gis.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.4.2.min.js"></script>
-    <style type="text/css">
-        *{
-            margin:0px;
-            padding:0px;
-        }
-        button, input, select, textarea {
-            font: 12px/16px Verdana, Helvetica, Arial, sans-serif;
-        }
-        #info {
-            margin-top: 10px;
-        }
-    </style>
     <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
     <script>
         var init = function() {
@@ -33,7 +22,7 @@
             infoWin.open();
             infoWin.setContent('<a href="info.html"><div style="width:200px;padding-top:10px;">'+
                     '<img style="float:left;width:30px;height:30px" src="img/1.jpg"/> '+
-                    '我在这里打酱油</div></a>');
+                    '张三在这里</div></a>');
             infoWin.setPosition(center);
         }
     </script>
@@ -42,9 +31,9 @@
     <header data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
         <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse">返回</a>
         <h1>家教云平台</h1>
-        <a href="index.html" data-role="button" class="ui-btn-right" data-icon="home">列表显示</a>
+        <a href="index.html" data-role="button" class="ui-btn-right" data-icon="bars">列表显示</a>
     </header><!-- /header -->
-    <div style="width:device-width;height:400px;margin:10px;padding:10px;" id="container" ></div>
+    <div id="container" ></div>
     <div id="info">
     </div>
 </body>

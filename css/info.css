@@ -19,3 +19,13 @@ body{
 .score{
     float: left;
 }
+.head{
+    width: 134px;
+    height: 134px;
+}
+.dial{
+    padding-top: 10px;
+}
+.dial a{
+    text-decoration:none;
+}

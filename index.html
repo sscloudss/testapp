@@ -1,10 +1,11 @@
-﻿﻿<!DOCTYPEhtml>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <title>家教云平台</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
-        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
-        <link rel="stylesheet" type="text/css" href="css/x.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+        <link rel="stylesheet" href="css/info.css">
         <script src="js/jquery.js"></script>
         <script src="js/jquery.mobile-1.4.2.min.js"></script>
         <script>
@@ -24,19 +25,13 @@
 <!--找家教页面-->
 <div data-role="page" id="home" data-title="家教云平台" data-add-back-btn="true" >
     <header data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-        <a href="search.html" data-role="button" data-icon="search">查找</a>
+        <!--<a href="search.html" data-role="button" data-icon="search">查找</a>-->
         <h1>家教云平台</h1>
         <a href="gis.html" data-role="button" class="ui-btn-right" data-icon="search" data-ajax="false">位置显示</a>
 
         <div data-role="navbar">
             <ul>
-                <!--                <li>
-                                    <select name="fsex" id="fsex">
-                                        <option value="all">性别</option>
-                                        <option value="sexMale">男</option>
-                                        <option value="sexFemale">女</option>
-                                </li>
-                -->                <li>
+                <li>
                 <select name="grade" id="grade">
                     <option value="all">年级</option>
                     <option value="grade1">一年级</option>
@@ -166,13 +161,14 @@
             <li id="load_more"><a href="" onclick="load_more()">
 
                 <h2>查看更多</h2>
-
             </a>
             </li>
 
 
+
         </ul>
     </div>
+
     <footer data-role="footer" data-position="fixed" data-id="main-tabbar" data-theme="b">
         <div data-role="navbar">
             <ul>
@@ -186,8 +182,9 @@
 <!--个人信息页面-->
 <div data-role="page" id="profile" data-title="家教云平台">
     <header data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+        <a href="modify.html" data-role="button" data-icon="gear">修改资料</a>
         <h1>家教云平台</h1>
-        <a href="#" data-role="button" class="ui-btn-right" data-icon="search" data-ajax="false">推荐家教</a>
+        <!--<a href="#" data-role="button" class="ui-btn-right" data-icon="search" data-ajax="false">推荐家教</a>-->
 
     </header><!-- /header -->
 
@@ -219,14 +216,20 @@
         </div>
     </div>
     <!--<div class="ui-grid-b">-->
+
     <div class="ui-bar ui-bar-a h60">
         <span for="subject">科目：</span>
         <span class="subject">初二英语</span>
     </div>
     <div class="ui-bar ui-bar-b">
-        <span for="selfIntroduction">自我介绍：</span>
-        <p id="selfIntroduction">基础一般，需要进行大量的基础练习。</p>
+        <span for="selfIntroduction">自我简介：</span>
+        <p class="selfIntroduction">学生基础一般，需要进行大量的基础练习。</p>
     </div>
+
+    <div class="ui-bar ui-bar-a h60">
+        <span >完善以下信息来让平台推荐匹配用户</span>
+    </div>
+
     <!--</div>-->
 
 <footer data-role="footer" data-position="fixed" data-id="main-tabbar" data-theme="b">
@@ -246,15 +249,12 @@
             var myli = $("<li></li>");
 
             var mya = $("<a href='info.html'></a>");
-//                    var myimg=$("<img></img>");
 
             var myh2 = $("<h2>新张三</h2>");
             var myp = $("<p>初中数学</p>");
-//                    mya.append(myimg);
             mya.append(myh2);
             mya.append(myp);
             myli.append(mya);
-//                    myul.append(myli);
             more.before(myli);
         }
     }

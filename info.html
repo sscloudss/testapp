@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <title>家教云平台</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
-    <link rel="stylesheet" type="text/css" href="css/x.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="css/info.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.4.2.min.js"></script>
 </head>
@@ -20,15 +20,18 @@
     <div data-role="content" id="content">
         <div class="ui-grid-a">
             <div class="ui-block-a">
-                <img src="img/1.jpg">
-                <div class="rank">
+                <img class="head" src="img/1.jpg">
+                <div class="rank" onclick="">
                     <ul type="none" >
-                        <li class="score"><img src="img/starFull.jpg"/></li>
-                        <li class="score"><img src="img/starFull.jpg"/></li>
-                        <li class="score"><img src="img/starFull.jpg"/></li>
-                        <li class="score"><img src="img/starFull.jpg"/></li>
-                        <li class="score"><img src="img/star.jpg"/></li>
+                        <li class="score" style="float: left"><img src="img/starFull.jpg"/></li>
+                        <li class="score" style="float: left"><img src="img/starFull.jpg"/></li>
+                        <li class="score" style="float: left"><img src="img/starFull.jpg"/></li>
+                        <li class="score" style="float: left"><img src="img/starFull.jpg"/></li>
+                        <li class="score" style="float: left"><img src="img/star.jpg"/></li>
                     </ul>
+                </div>
+                <div class="dial">
+                    <a href="tel:13202088154:"><button data-theme="b">即刻联系</button></a>
                 </div>
             </div>
             <div class="ui-block-b">
@@ -46,7 +49,7 @@
                     <span id="profession">学生</span>
                 </div>
                 <div class="ui-bar ui-bar-b h60">
-                    <span for="school">毕业学校：</span>
+                    <span for="school">毕业院校：</span>
                     <span id="school">华工</span>
                 </div>
                 </div>
@@ -58,13 +61,11 @@
             <span class="subject">初二英语</span>
             </div>
             <div class="ui-bar ui-bar-b">
-            <span for="selfIntroduction">自我介绍：</span>
+            <span for="selfIntroduction">自我简介：</span>
             <p id="selfIntroduction">本人学习良好，高考成绩优良，基础知识还不错，性格开朗。</p>
             </div>
         <!--</div>-->
 
     </div>
-
-
 </body>
 </html>

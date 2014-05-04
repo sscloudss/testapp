@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>家教云平台</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<header data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+    <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse">返回</a>
+    <h1>家教云平台</h1>
+    <a href="#" data-role="button" class="ui-btn-right" data-icon="home" onclick="javascript:document.mod_info.submit();">保存</a>
+</header><!-- /header -->
+<div data-role="content">
+    <form name="mod_info" action="#" method="post">
+        <div class="ui-bar ui-bar-a h60">
+            <span for="name">姓名：</span>
+            <input id="name" type="text" name="name" value="李四" />
+        </div>
+        <div class="ui-bar ui-bar-a h60">
+        <span for="sex" data-inline="true">性别：</span>
+        <fieldset data-role="controlgroup" id="sex" data-inline="true" data-type="horizontal">
+
+            <input type="radio" name="sex" id="sexMale" checked="checked" value="1">
+            <label for="sexMale">男</label>
+            <input type="radio" name="sex" id="sexFemale" value="2">
+            <label for="sexFemale">女</label>
+        </fieldset>
+        </div>
+        <div class="ui-bar ui-bar-a h60">
+            <span >职业：</span>
+            <input type="text" name="profession" value="学生" />
+        </div>
+        <div class="ui-bar ui-bar-a h60">
+            <span >毕业院校：</span>
+            <input type="text" name="school" value="华南理工大学"/>
+        </div>
+        <div class="ui-bar ui-bar-a h60">
+            <span >科目：</span>
+            <input type="text" name="subject" value="初二数学"/>
+        </div>
+        <div class="ui-bar ui-bar-a h60">
+            <span >自我简介：</span>
+            <textarea name="selfIntroduction">学生基础一般，需要进行大量的基础练习。</textarea>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
