@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/info.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.4.2.min.js"></script>
+
 </head>
 <body>
 <!-- /header -->
@@ -14,7 +15,7 @@
     <header data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
         <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse">返回</a>
         <h1>家教云平台</h1>
-        <a href="index.html" data-role="button" class="ui-btn-right" data-icon="home">首页</a>
+        <a href="#" id="collect" data-role="button" class="ui-btn-right" data-icon="star">收藏</a>
     </header><!-- /header -->
 
     <div data-role="content" id="content">
@@ -31,37 +32,45 @@
                     </ul>
                 </div>
                 <div class="dial">
-                    <a href="tel:13202088154:"><button data-theme="b">即刻联系</button></a>
+                    <a href="tel:+8688888888:"><button data-theme="b">即刻联系</button></a>
                 </div>
             </div>
             <div class="ui-block-b">
                 <div class="ui-bar ui-bar-a h60">
-                <span for="name">姓名：</span>
+                <span>姓名：</span>
                 <span id="name">张三</span>
                 </div>
                 <div class="ui-bar ui-bar-b h60">
-                <span for="sex">性别：</span>
+                <span>性别：</span>
                 <span id="sex">男</span>
                 </div>
-
                 <div class="ui-bar ui-bar-a h60">
-                    <span for="profession">职业：</span>
-                    <span id="profession">学生</span>
+                    <span>年龄：</span>
+                    <span id="age">22</span>
                 </div>
                 <div class="ui-bar ui-bar-b h60">
-                    <span for="school">毕业院校：</span>
-                    <span id="school">华工</span>
+                    <span>职业：</span>
+                    <span id="profession">学生</span>
                 </div>
+                <div class="ui-bar ui-bar-a h60">
+                    <span>学历：</span>
+                    <span id="eduBg">本科</span>
+                </div>
+
                 </div>
             </div>
         </div>
         <!--<div class="ui-grid-b">-->
             <div class="ui-bar ui-bar-a h60">
-            <span for="subject">科目：</span>
+                <span>毕业院校：</span>
+                <span id="school">华南理工大学</span>
+            </div>
+            <div class="ui-bar ui-bar-b h60">
+            <span>教授科目：</span>
             <span class="subject">初二英语</span>
             </div>
-            <div class="ui-bar ui-bar-b">
-            <span for="selfIntroduction">自我简介：</span>
+            <div class="ui-bar ui-bar-a">
+            <span>自我简介：</span>
             <p id="selfIntroduction">本人学习良好，高考成绩优良，基础知识还不错，性格开朗。</p>
             </div>
         <!--</div>-->

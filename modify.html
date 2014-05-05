@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -12,16 +12,16 @@
 <header data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
     <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse">返回</a>
     <h1>家教云平台</h1>
-    <a href="#" data-role="button" class="ui-btn-right" data-icon="home" onclick="javascript:document.mod_info.submit();">保存</a>
+    <a href="#" data-role="button" class="ui-btn-right" data-icon="home" onclick="document.mod_info.submit();">保存</a>
 </header><!-- /header -->
 <div data-role="content">
-    <form name="mod_info" action="#" method="post">
+    <form name="mod_info" action="index.html#profile" method="post">
         <div class="ui-bar ui-bar-a h60">
-            <span for="name">姓名：</span>
+            <label for="name">姓名：</label>
             <input id="name" type="text" name="name" value="李四" />
         </div>
         <div class="ui-bar ui-bar-a h60">
-        <span for="sex" data-inline="true">性别：</span>
+        <label for="sex" data-inline="true">性别：</label>
         <fieldset data-role="controlgroup" id="sex" data-inline="true" data-type="horizontal">
 
             <input type="radio" name="sex" id="sexMale" checked="checked" value="1">

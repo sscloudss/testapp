@@ -25,7 +25,7 @@
 <!--找家教页面-->
 <div data-role="page" id="home" data-title="家教云平台" data-add-back-btn="true" >
     <header data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-        <!--<a href="search.html" data-role="button" data-icon="search">查找</a>-->
+        <a href="search.html" data-role="button" data-icon="search">查找</a>
         <h1>家教云平台</h1>
         <a href="gis.html" data-role="button" class="ui-btn-right" data-icon="search" data-ajax="false">位置显示</a>
 
@@ -158,12 +158,6 @@
                 <p>初中数学，高一英语</p>
             </a>
             </li>
-            <li id="load_more"><a href="" onclick="load_more()">
-
-                <h2>查看更多</h2>
-            </a>
-            </li>
-
 
 
         </ul>
@@ -204,11 +198,11 @@
             </div>
             <div class="ui-block-b">
                 <div class="ui-bar ui-bar-a h60">
-                    <span for="name">姓名：</span>
+                    <span>姓名：</span>
                     <span id="name">李四</span>
                 </div>
                 <div class="ui-bar ui-bar-b h60">
-                    <span for="sex">性别：</span>
+                    <span>性别：</span>
                     <span id="sex">男</span>
                 </div>
 
@@ -218,16 +212,20 @@
     <!--<div class="ui-grid-b">-->
 
     <div class="ui-bar ui-bar-a h60">
-        <span for="subject">科目：</span>
+        <span>科目：</span>
         <span class="subject">初二英语</span>
     </div>
-    <div class="ui-bar ui-bar-b">
-        <span for="selfIntroduction">自我简介：</span>
+    <div class="ui-bar ui-bar-b h60">
+        <span>居住地点：</span>
+        <span class="addr">广州天河</span>
+    </div>
+    <div class="ui-bar ui-bar-c">
+        <span>自我简介：</span>
         <p class="selfIntroduction">学生基础一般，需要进行大量的基础练习。</p>
     </div>
 
     <div class="ui-bar ui-bar-a h60">
-        <span >完善以下信息来让平台推荐匹配用户</span>
+        <!--<span >完善以下信息以让平台推荐匹配用户</span>-->
     </div>
 
     <!--</div>-->

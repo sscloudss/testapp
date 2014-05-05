@@ -10,15 +10,15 @@
 <body>
 <div data-role="page">
     <header data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b"  data-add-back-btn="true" data-back-btn-text="返回">
-<!--        <a href="" data-role="button" data-icon="back">返回</a>  -->
+        <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse">返回</a>
         <h1>家教云平台</h1>
         <a href="index.html" data-role="button" class="ui-btn-right" data-icon="home">首页</a>
     </header><!-- /header -->
     <div data-role="content">
-        <form method="post" action="#" name="search">
+        <form method="post" action="searchResult.html" name="search">
             <fieldset  >
-                <label for="fname">姓名：</label>
-                <input type="text" name="fname" id="fname">
+                <label for="name">姓名：</label>
+                <input type="text" name="name" id="name">
                 <label for="sex" data-inline="true">性别：</label>
                 <fieldset data-role="controlgroup" id="sex" data-inline="true" data-type="horizontal">
 
@@ -64,7 +64,7 @@
         </form>
     </div>
     <div data-role="footer" data-position="fixed"  data-theme="b">
-        <button class="ui-btn ui-shadow" data-theme="b" onclick="javascript:document.search.submit();">查找</button>
+        <button class="ui-btn ui-shadow" data-theme="b" onclick="document.search.submit();">查找</button>
     </div>
 
 </div>
